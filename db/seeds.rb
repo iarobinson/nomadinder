@@ -8,13 +8,9 @@
 
 
 Account.create([
-  { first_name: "Veronica", last_name: "Robinson", username: "", email: "veronica@testing.com", password: "testing" },
-  { first_name: "Alene", last_name: "Sweat", username: "Alene", email: "Alene@testing.com", password: "testing" },
-  { first_name: "Danielle", last_name: "Gustavson", username: "Danielle", email: "Danielle@testing.com", password: "testing" },
-  { first_name: "Shannin", last_name: "Waldis", username: "Shannin", email: "Shannin@testing.com", password: "testing" },
-  { first_name: "Lauren", last_name: "Robinson", username: "Lauren", email: "Lauren@testing.com", password: "testing" },
-  { first_name: "Leslie", last_name: "Robinson", username: "Leslie", email: "Leslie@testing.com", password: "testing" },
-  { first_name: "Malary", last_name: "Engstrom", username: "Malary", email: "Malary@testing.com", password: "testing" },
-  { first_name: "Giana", last_name: "Digeso", username: "Giana", email: "Giana@testing.com", password: "testing" },
-  { first_name: "Ally", last_name: "Stronach", username: "Ally", email: "Ally@testing.com", password: "testing" }
+  { first_name: "Margot", last_name: "Robbie", username: "margot_robbie", email: "mr@testing.com", password: "testing" },
+  { first_name: "Jessica", last_name: "Alba", username: "jessicaalba", email: "ja@testing.com", password: "testing" },
+  { first_name: "Jessica", last_name: "Biel", username: "jessica_biel", email: "jb@testing.com", password: "testing" },
+  { first_name: "Beyonce", last_name: "Knowles", username: "superstar", email: "bk@testing.com", password: "testing" },
+  { first_name: "Selma", last_name: "Hayek", username: "demondancer", email: "sh@testing.com", password: "testing" }
 ])

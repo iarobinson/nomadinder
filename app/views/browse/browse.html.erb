@@ -1,12 +1,30 @@
 <ul id="slides">
   <% @users.each_with_index do |user, index| %>
-    <div class="slide" data-id="<%= user.id %>">
-      <li><%= user.first_name %></li>
-    </div>
+    <li class="slide <%= "showing" if index == 0 %>" data-id="<%= user.id %>">
+      <div class="image-carousel row" style="background-image: url('<%= url_for user.images.first %>')">
+        <div class="col-md-10 offset-md-1">
+          <span class="tiny">
+            <span class="user-details">
+              <h3><%= user.first_name if user.first_name %></h3>
+              <p>
+                <i class="fa fa-graduation-cap"></i> Job/Studies: Superstar<br>
+                <i class="fa fa-map-marker"></i> Location: Los Angeles
+              </p>
+            </span>
+          </span>
+        </div>
+      </div>
+    </li>
   <% end %>
 </ul>
 
 <div id="slide-controls">
-  <span class="controls" id="decline"><i class="fa fa-times-circle fa-2x"></i> Deny</span>
-  <span class="controls" id="approve"><i class="fa fa-heart fa-2x"></i> Approve</span>
+  <div class="row">
+    <div class="col-6">
+      <button class="controls btn btn-block btn-lg btn-danger text-white" id="decline"><i class="fa fa-times-circle fa-2x"></i> Deny</button>
+    </div>
+    <div class="col-6">
+      <button class="controls btn btn-block btn-lg btn-success text-white" id="approve"><i class="fa fa-heart fa-2x"></i> Approve</button>
+    </div>
+  </div>
 </div>
