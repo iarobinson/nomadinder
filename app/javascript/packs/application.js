@@ -18,3 +18,4 @@ require("@rails/activestorage").start()
 // const imagePath = (name) => images(name, true)
 
 import '../stylesheets/application'
+import "../includes/slides.js"
