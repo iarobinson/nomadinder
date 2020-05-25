@@ -19,3 +19,4 @@ require("@rails/activestorage").start()
 
 import '../stylesheets/application'
 import "../includes/slides.js"
+import "../includes/matches.js"
